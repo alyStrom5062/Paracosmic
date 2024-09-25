@@ -22,7 +22,18 @@
 // Tier 9   :  80  - 90   :  Giant(All x 3)   +  Giant(Cla x 1)    + Large(Cla x 3)
 // Tier 10  :  90  - 100  :  Giant(All x 5)   +  Giant(Cla x 3)    + Large(Cla x 5)
 
-// Attack
+// Attack Formulas:
+//     Rank 1 = 100
+//     Rank 2 = 200
+//     Rank 3 = 300
+//     Rank 4 = 400
+//     Rank 5 = 500
+//     Level increases it 20 * per level: Ex: Level 40 is 40*20 = 800
+//     Rank 5 at 100 should be 5000. 
+//     500 + 100*20 = 2500
+//     Talents boost characters up to 2x...meaning they're 5000 if Talents/Rank/Level maxxed.
+
+
 function calculateAttack() {
     attack = Guardian.rank * attack + Guardian.level * 20
 }
