@@ -22,3 +22,7 @@
 // Tier 9   :  80  - 90   :  Giant(All x 3)   +  Giant(Cla x 1)    + Large(Cla x 3)
 // Tier 10  :  90  - 100  :  Giant(All x 5)   +  Giant(Cla x 3)    + Large(Cla x 5)
 
+// Attack
+function calculateAttack() {
+    attack = Guardian.rank * attack + Guardian.level * 20
+}
