@@ -8,6 +8,8 @@ function Crystal(
     oneStar, twoStar, threeStar, fourStar, fiveStar){
         this.name = name
         this.range = range
+        this.count = count
+        this.instore = instore
 
         this.daniil = daniil
         this.artemy = artemy
@@ -33,6 +35,7 @@ function Crystal(
 const glowingCrystal = new Crystal(
     "Glowing",
     "2 to 5 star",
+    0, true,
     10, 10, 10, 10, 10, 
     10, 10, 10, 10, 10,
     60, 30, 10, 0, 0
@@ -42,6 +45,7 @@ const glowingCrystal = new Crystal(
 const stellarCrystal = new Crystal(
     "Stellar",
     "2 to 5 star",
+    0, false,
     10, 10, 10, 10, 10, 
     10, 10, 10, 10, 10,
     0, 60, 30, 5, 1
@@ -51,6 +55,7 @@ const stellarCrystal = new Crystal(
 const radiantCrystal = new Crystal(
     "Radiant",
     "3 star",
+    0, false,
     10, 10, 10, 10, 10, 
     10, 10, 10, 10, 10,
     0, 0, 100, 0, 0
@@ -60,6 +65,7 @@ const radiantCrystal = new Crystal(
 const brilliantCrystal = new Crystal(
     "Brilliant",
     "4 star",
+    0, false,
     10, 10, 10, 10, 10, 
     10, 10, 10, 10, 10,
     0, 0, 0, 100, 0
@@ -69,6 +75,7 @@ const brilliantCrystal = new Crystal(
 const astralCrystal = new Crystal(
     "Astral",
     "3 to 5 star",
+    0, false,
     10, 10, 10, 10, 10, 
     10, 10, 10, 10, 10,
     0, 0, 80, 18, 2
@@ -76,87 +83,114 @@ const astralCrystal = new Crystal(
 
 // =========================
 
-// Famed (2 - 5)
+    // Famed (2 - 5)
 
-const daniilFamed = new Crystal(
-    "Daniil Famed",
-    "2 to 5 star",
-    28, 8, 8, 8, 8, 
-    8, 8, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const daniilFamed = new Crystal(
+        "Daniil Famed",
+        "2 to 5 star",
+        0, false,
+        28, 8, 8, 8, 8, 
+        8, 8, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const artemyFamed = new Crystal(
-    "Artemy Famed",
-    "2 to 5 star",
-    8, 28, 8, 8, 8, 
-    8, 8, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const artemyFamed = new Crystal(
+        "Artemy Famed",
+        "2 to 5 star",
+        0, false,
+        8, 28, 8, 8, 8, 
+        8, 8, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const anduinFamed = new Crystal(
-    "Anduin Famed",
-    "2 to 5 star",
-    8, 8, 28, 8, 8, 
-    8, 8, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const anduinFamed = new Crystal(
+        "Anduin Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 28, 8, 8, 
+        8, 8, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const wrathionFamed = new Crystal(
-    "Wrathion Famed",
-    "2 to 5 star",
-    8, 8, 8, 28, 8, 
-    8, 8, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const wrathionFamed = new Crystal(
+        "Wrathion Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 28, 8, 
+        8, 8, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const aangFamed = new Crystal(
-    "Aang Famed",
-    "2 to 5 star",
-    8, 8, 8, 8, 28, 
-    8, 8, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const aangFamed = new Crystal(
+        "Aang Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 8, 28, 
+        8, 8, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const zukoFamed = new Crystal(
-    "Zuko Famed",
-    "2 to 5 star",
-    8, 8, 8, 8, 8, 
-    28, 8, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const zukoFamed = new Crystal(
+        "Zuko Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 8, 8, 
+        28, 8, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const etihwFamed = new Crystal(
-    "Etihw Famed",
-    "2 to 5 star",
-    8, 8, 8, 8, 8, 
-    8, 28, 8, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const etihwFamed = new Crystal(
+        "Etihw Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 8, 8, 
+        8, 28, 8, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const kcalbFamed = new Crystal(
-    "Daniil Famed",
-    "2 to 5 star",
-    8, 8, 8, 8, 8, 
-    8, 8, 28, 8, 8,
-    0, 60, 30, 5, 1
-)
+    const kcalbFamed = new Crystal(
+        "Daniil Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 8, 8, 
+        8, 8, 28, 8, 8,
+        0, 60, 30, 5, 1
+    )
 
-const taakoFamed = new Crystal(
-    "Taako Famed",
-    "2 to 5 star",
-    8, 8, 8, 8, 8, 
-    8, 8, 8, 28, 8,
-    0, 60, 30, 5, 1
-)
+    const taakoFamed = new Crystal(
+        "Taako Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 8, 8, 
+        8, 8, 8, 28, 8,
+        0, 60, 30, 5, 1
+    )
 
-const kravitzFamed = new Crystal(
-    "Kravitz Famed",
-    "2 to 5 star",
-    8, 8, 8, 8, 8, 
-    8, 8, 8, 8, 28,
-    0, 60, 30, 5, 1
-)
+    const kravitzFamed = new Crystal(
+        "Kravitz Famed",
+        "2 to 5 star",
+        0, false,
+        8, 8, 8, 8, 8, 
+        8, 8, 8, 8, 28,
+        0, 60, 30, 5, 1
+    )
+
+const allCrystals= [
+    glowingCrystal,
+    stellarCrystal,
+    brilliantCrystal, 
+    radiantCrystal,
+    astralCrystal,
+    daniilFamed,
+    artemyFamed,
+    anduinFamed,
+    wrathionFamed,
+    aangFamed,
+    zukoFamed,
+    etihwFamed,
+    kcalbFamed,
+    taakoFamed,
+    kravitzFamed]
 
 const famedCrystals= [
     daniilFamed,
@@ -234,12 +268,13 @@ function getRankByRNG(crystalNumber2) {
 let crystalNumber1 = 0
 let crystalNumber2 = 0
 
-function openCrystal(crystalNumber1, crystalNumber2){
+function openCrystal(crystalNumber1, crystalNumber2, playerGuardians){
     crystalNumber1 = Math.floor(Math.random() * 100) + 1
     crystalNumber2 = Math.floor(Math.random() * 100) + 1
     console.log(crystalNumber1, crystalNumber2)
     let character = getCharacterByRNG(crystalNumber1);
     let rank = getRankByRNG(crystalNumber2);
+    playerGuardians.push(character)
     alert(`${rank} Star ${character}`)
 }
     

@@ -1,0 +1,20 @@
+{
+  "name": "paracosmic",
+  "version": "1.0.0",
+  "description": "Disney Mirrorverse Clone",
+  "main": "crystal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyStrom5062/Paracosmic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyStrom5062/Paracosmic/issues"
+  },
+  "homepage": "https://github.com/alyStrom5062/Paracosmic#readme"
+}
