@@ -1,0 +1,8 @@
+#guardianDataDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#guardian-item {
+    border: black solid 1px;
+}

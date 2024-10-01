@@ -47,7 +47,12 @@ const taakoTalents = new TalentSet(
   "Good Out Here",
   "Defense significantly increased first time attacked."
 );
-const kravitzTalents = new TalentSet("", "Withering Scythe");
+const kravitzTalents = new TalentSet(
+  "Skill 1",
+  "Description",
+  "Skill 2",
+  "Description"
+);
 const wrathionTalents = new TalentSet(
   "Skill 1",
   "Description",
